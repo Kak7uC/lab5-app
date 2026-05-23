@@ -8,5 +8,5 @@ def test_logic():
     assert current_time > 0, "Ошибка: Время должно быть больше нуля!"
     print("Test passed!")
 
-if name == "main":
+if __name__ == "__main__":
     test_logic()
