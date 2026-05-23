@@ -25,7 +25,7 @@ class Handler(BaseHTTPRequestHandler):
             self.send_response(404)
             self.end_headers()
 
-if name == "main":
+if __name__ == "__main__":
     print("Server v2.0 started on port 8000...")
     server = HTTPServer(('0.0.0.0', 8000), Handler)
     server.serve_forever()
